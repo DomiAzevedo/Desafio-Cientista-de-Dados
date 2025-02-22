@@ -41,3 +41,16 @@ models:
           - not_null
       - name: crianca_matriculada_creche_pre_escola
         description: "Indicação se a criança está matriculada em creche ou pré-escola"
+
+  - name: problem_4
+    description: "Tabela com os dados tratados para a resolução do quarto problema"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - unique
+          - not_null
+      - name: sexo
+        description: "Sexo"
+      - name: atualizado_em
+        description: "Data e hora da última atualização dos dados"
