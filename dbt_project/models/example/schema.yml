@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: problem_1
-    description: "Tabela tratada com padronização de tipos e valores"
+    description: "Tabela com os dados tratados para a resolução do primeiro problema"
     columns:
       - name: id_paciente
         description: "Identificador de paciente"
@@ -18,3 +18,14 @@ models:
       - name: possui_plano_saude
         description: "Indicação se possui plano de saúde"
         description: "Indicação se a família do paciente é beneficiária"
+
+  - name: problem_2
+    description: "Tabela com os dados tratados para a resolução do segundo problema"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - unique
+          - not_null
+      - name: frequenta_escola
+        description: "Indicação se frequenta escola"
