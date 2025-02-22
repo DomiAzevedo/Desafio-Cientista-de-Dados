@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: problem_1
+    description: "Tabela tratada com padronização de tipos e valores"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - unique
+          - not_null
+      - name: obito
+        description: "Indicação de óbito"
+      - name: luz_eletrica
+        description: "Indicação se possui luz elétrica"
+      - name: em_situacao_de_rua
+        description: "Indicação se em situação de rua"
+      - name: possui_plano_saude
+        description: "Indicação se possui plano de saúde"
+        description: "Indicação se a família do paciente é beneficiária"
