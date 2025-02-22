@@ -29,3 +29,15 @@ models:
           - not_null
       - name: frequenta_escola
         description: "Indicação se frequenta escola"
+
+  
+  - name: problem_3
+    description: "Tabela com os dados tratados para a resolução do terceiro problema"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - unique
+          - not_null
+      - name: crianca_matriculada_creche_pre_escola
+        description: "Indicação se a criança está matriculada em creche ou pré-escola"
