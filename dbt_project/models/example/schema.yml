@@ -54,3 +54,14 @@ models:
         description: "Sexo"
       - name: atualizado_em
         description: "Data e hora da última atualização dos dados"
+
+  - name: problem_5
+    description: "Tabela com os dados tratados para a resolução do quinto problema"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - unique
+          - not_null
+      - name: tipo
+        description: "Identifica se dado veio de fluxo rotineiro ou histórico"
