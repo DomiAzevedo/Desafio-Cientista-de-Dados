@@ -65,3 +65,20 @@ models:
           - not_null
       - name: tipo
         description: "Identifica se dado veio de fluxo rotineiro ou histórico"
+
+  - name: problem_6-7
+    description: "Tabela com os dados tratados para a resolução do sexto e do sétimo problema"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - unique
+          - not_null
+      - name: meios_transporte
+        description: "Meios de transporte utilizados"
+      - name: doencas_condicoes
+        description: "Doenças ou condições de saúde"
+      - name: identidade_genero
+        description: "Identidade de gênero"
+      - name: meios_comunicacao
+        description: "Meios de comunicação utilizados"
