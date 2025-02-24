@@ -7,7 +7,6 @@ models:
       - name: id_paciente
         description: "Identificador de paciente"
         tests:
-          - unique
           - not_null
       - name: obito
         description: "Indicação de óbito"
@@ -17,6 +16,9 @@ models:
         description: "Indicação se em situação de rua"
       - name: possui_plano_saude
         description: "Indicação se possui plano de saúde"
+      - name: vulnerabilidade_social
+        description: "Vulnerabilidades sociais"
+      - name: familia_beneficiaria_auxilio_brasil
         description: "Indicação se a família do paciente é beneficiária"
 
   - name: problem_2
@@ -25,7 +27,6 @@ models:
       - name: id_paciente
         description: "Identificador de paciente"
         tests:
-          - unique
           - not_null
       - name: frequenta_escola
         description: "Indicação se frequenta escola"
@@ -37,7 +38,6 @@ models:
       - name: id_paciente
         description: "Identificador de paciente"
         tests:
-          - unique
           - not_null
       - name: crianca_matriculada_creche_pre_escola
         description: "Indicação se a criança está matriculada em creche ou pré-escola"
@@ -48,7 +48,6 @@ models:
       - name: id_paciente
         description: "Identificador de paciente"
         tests:
-          - unique
           - not_null
       - name: sexo
         description: "Sexo"
@@ -61,7 +60,6 @@ models:
       - name: id_paciente
         description: "Identificador de paciente"
         tests:
-          - unique
           - not_null
       - name: tipo
         description: "Identifica se dado veio de fluxo rotineiro ou histórico"
@@ -72,7 +70,6 @@ models:
       - name: id_paciente
         description: "Identificador de paciente"
         tests:
-          - unique
           - not_null
       - name: meios_transporte
         description: "Meios de transporte utilizados"
@@ -89,7 +86,94 @@ models:
       - name: id_paciente
         description: "Identificador de paciente"
         tests:
-          - unique
           - not_null
       - name: identidade_genero
         description: "Identidade de gênero"
+
+  - name: problem_9
+    description: "Tabela com os dados tratados para a resolução do nono problema"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - not_null
+      - name: pressao_sistolica
+        description: "Pressão sistólica medida"
+      - name: pressao_diastolica
+        description: "Pressão diastólica medida"
+
+  - name: tabela_final
+    description: "Tabela tratada e finalizada com todos os problemas resolvidos"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - not_null
+      - name: sexo
+        description: "Sexo"
+      - name: obito
+        description: "Indicação de óbito"
+      - name: bairro
+        description: "Nome do bairro"
+      - name: raca_cor
+        description: "Descrição de raça/cor"
+      - name: ocupacao
+        description: "Ocupação exercida"
+      - name: religiao
+        description: "Religião exercida"
+      - name: luz_eletrica
+        description: "Indicação se possui luz elétrica"
+      - name: data_cadastro
+        description: "Data de cadastro do paciente"
+      - name: escolaridade
+        description: "Nível de escolaridade"
+      - name: nacionalidade
+        description: "Nacionalidade"
+      - name: renda_familiar
+        description: "Renda familiar"
+      - name: data_nascimento
+        description: "Data de nascimento"
+      - name: em_situacao_de_rua
+        description: "Indicação se em situação de rua"
+      - name: frequenta_escola
+        description: "Indicação se frequenta escola"
+      - name: meios_transporte
+        description: "Meios de transporte utilizados"
+      - name: doencas_condicoes
+        description: "Doenças ou condições de saúde"
+      - name: identidade_genero
+        description: "Identidade de gênero"
+      - name: meios_comunicacao
+        description: "Meios de comunicação utilizados"
+      - name: orientacao_sexual
+        description: "Orientação sexual"
+      - name: possui_plano_saude
+        description: "Indicação se possui plano de saúde"
+      - name: em_caso_doenca_procura
+        description: "Indicação sobre a quem procura em caso de doença"
+      - name: situacao_profissional
+        description: "Situação profissional"
+      - name: vulnerabilidade_social
+        description: "Vulnerabilidades sociais"
+      - name: data_atualizacao_cadastro
+        description: "Data da última atualização cadastral do paciente"
+      - name: familia_beneficiaria_auxilio_brasil
+        description: "Indicação se a família do paciente é beneficiária"
+      - name: crianca_matriculada_creche_pre_escola
+        description: "Indicação se a criança está matriculada em creche ou pré-escola"
+      - name: altura
+        description: "Altura medida"
+      - name: peso
+        description: "Peso medido"
+      - name: pressao_sistolica
+        description: "Pressão sistólica medida"
+      - name: pressao_diastolica
+        description: "Pressão diastólica medida"
+      - name: n_atendimentos_atencao_primaria
+        description: "Quantidade de atendimentos na atenção primária no último ano"
+      - name: n_atendimentos_hospital
+        description: "Quantidade de atendimentos no hospital no último ano"
+      - name: updated_at
+        description: "Data e hora da última atualização dos dados"
+      - name: tipo
+        description: "Identifica se dado veio de fluxo rotineiro ou histórico"

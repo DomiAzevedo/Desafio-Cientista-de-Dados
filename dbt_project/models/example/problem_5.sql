@@ -3,7 +3,7 @@ with raw_data as (
         id_paciente,
         case 
             when tipo = 'rotineiro' then 'Rotineiro'
-            when tipo = 'female' then 'Histórico'
+            when tipo = 'historico' then 'Histórico'
             else null 
         end as tipo
 
