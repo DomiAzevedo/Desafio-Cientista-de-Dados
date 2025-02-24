@@ -26,6 +26,12 @@ with raw_data as (
         end as possui_plano_saude,
 
         case 
+            when vulnerabilidade_social in ('1', 'TRUE') then true
+            when vulnerabilidade_social in ('0', 'FALSE') then false
+            else null 
+        end as vulnerabilidade_social,
+
+        case 
             when familia_beneficiaria_auxilio_brasil in ('1', 'TRUE') then true
             when familia_beneficiaria_auxilio_brasil in ('0', 'FALSE') then false
             else null 
