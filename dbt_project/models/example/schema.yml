@@ -93,3 +93,16 @@ models:
           - not_null
       - name: identidade_genero
         description: "Identidade de gênero"
+
+  - name: problem_9
+    description: "Tabela com os dados tratados para a resolução do nono problema"
+    columns:
+      - name: id_paciente
+        description: "Identificador de paciente"
+        tests:
+          - unique
+          - not_null
+      - name: pressao_sistolica
+        description: "Pressão sistólica medida"
+      - name: pressao_diastolica
+        description: "Pressão diastólica medida"
