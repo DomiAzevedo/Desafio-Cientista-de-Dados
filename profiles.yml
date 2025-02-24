@@ -1,0 +1,10 @@
+dbt_project:
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: 'dbt-project-451513' 
+      dataset: 'dados_tratados' 
+      threads: 4
+      keyfile: 'C:\caminho\para\dbt-project-451513-7a4e50eb1790.json'
+  target: dev
