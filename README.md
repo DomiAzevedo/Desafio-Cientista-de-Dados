@@ -1,7 +1,7 @@
 # Desafio - Cientista de Dados
 
 ##  Objetivo
-Neste desafio tive que analisar, estruturar e transformar dados em formato raw fornecidos no arquivo `dados_ficha_a_desafio.csv`.
+Neste desafio tive que analisar, estruturar e transformar dados em formato raw fornecidos no arquivo `dados_ficha_a_desafio.csv`. As primeiras 1000 linhas dos dados já tratados estão no arquivo `dados_tratados.csv`, eles foram retirados diretamente da BigQuery.
 
 ## Descrição
 ### Exploração e apontamento de problemas 
